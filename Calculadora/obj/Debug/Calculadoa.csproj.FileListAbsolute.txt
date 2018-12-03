@@ -1,0 +1,14 @@
+C:\Users\jonat\source\repos\Calculadoa\Calculadoa\bin\Debug\Calculadoa.exe.config
+C:\Users\jonat\source\repos\Calculadoa\Calculadoa\bin\Debug\Calculadoa.exe
+C:\Users\jonat\source\repos\Calculadoa\Calculadoa\bin\Debug\Calculadoa.pdb
+C:\Users\jonat\source\repos\Calculadoa\Calculadoa\bin\Debug\MetroFramework.Design.dll
+C:\Users\jonat\source\repos\Calculadoa\Calculadoa\bin\Debug\MetroFramework.dll
+C:\Users\jonat\source\repos\Calculadoa\Calculadoa\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\jonat\source\repos\Calculadoa\Calculadoa\obj\Debug\Calculadoa.csprojAssemblyReference.cache
+C:\Users\jonat\source\repos\Calculadoa\Calculadoa\obj\Debug\Calculadoa.Properties.Resources.resources
+C:\Users\jonat\source\repos\Calculadoa\Calculadoa\obj\Debug\Calculadoa.csproj.GenerateResource.cache
+C:\Users\jonat\source\repos\Calculadoa\Calculadoa\obj\Debug\Calculadoa.csproj.CoreCompileInputs.cache
+C:\Users\jonat\source\repos\Calculadoa\Calculadoa\obj\Debug\Calculadoa.csproj.CopyComplete
+C:\Users\jonat\source\repos\Calculadoa\Calculadoa\obj\Debug\Calculadoa.exe
+C:\Users\jonat\source\repos\Calculadoa\Calculadoa\obj\Debug\Calculadoa.pdb
+C:\Users\jonat\source\repos\Calculadoa\Calculadoa\obj\Debug\Calculadoa.Calculadora.resources

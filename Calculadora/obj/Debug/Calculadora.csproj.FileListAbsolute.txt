@@ -1,0 +1,16 @@
+C:\Users\jonat\source\repos\Calculadora\Calculadora\bin\Debug\Calculadoa.exe.config
+C:\Users\jonat\source\repos\Calculadora\Calculadora\bin\Debug\Calculadoa.exe
+C:\Users\jonat\source\repos\Calculadora\Calculadora\bin\Debug\Calculadoa.pdb
+C:\Users\jonat\source\repos\Calculadora\Calculadora\bin\Debug\MetroFramework.Design.dll
+C:\Users\jonat\source\repos\Calculadora\Calculadora\bin\Debug\MetroFramework.dll
+C:\Users\jonat\source\repos\Calculadora\Calculadora\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\jonat\source\repos\Calculadora\Calculadora\obj\Debug\Calculadora.csprojAssemblyReference.cache
+C:\Users\jonat\source\repos\Calculadora\Calculadora\obj\Debug\Calculadoa.Calculadora.resources
+C:\Users\jonat\source\repos\Calculadora\Calculadora\obj\Debug\Calculadoa.Form2.resources
+C:\Users\jonat\source\repos\Calculadora\Calculadora\obj\Debug\Calculadoa.Menu.resources
+C:\Users\jonat\source\repos\Calculadora\Calculadora\obj\Debug\Calculadoa.Properties.Resources.resources
+C:\Users\jonat\source\repos\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.cache
+C:\Users\jonat\source\repos\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\jonat\source\repos\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.CopyComplete
+C:\Users\jonat\source\repos\Calculadora\Calculadora\obj\Debug\Calculadoa.exe
+C:\Users\jonat\source\repos\Calculadora\Calculadora\obj\Debug\Calculadoa.pdb
