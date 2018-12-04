@@ -14,3 +14,17 @@ C:\Users\jonat\source\repos\Calculadora\Calculadora\obj\Debug\Calculadora.csproj
 C:\Users\jonat\source\repos\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.CopyComplete
 C:\Users\jonat\source\repos\Calculadora\Calculadora\obj\Debug\Calculadoa.exe
 C:\Users\jonat\source\repos\Calculadora\Calculadora\obj\Debug\Calculadoa.pdb
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora\Calculadora\bin\Debug\Calculadoa.exe.config
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora\Calculadora\obj\Debug\Calculadoa.exe
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora\Calculadora\obj\Debug\Calculadoa.pdb
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora\Calculadora\obj\Debug\Calculadora.csprojResolveAssemblyReference.cache
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora\Calculadora\obj\Debug\Calculadoa.Calculadora.resources
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora\Calculadora\obj\Debug\Calculadoa.Form2.resources
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora\Calculadora\obj\Debug\Calculadoa.Menu.resources
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora\Calculadora\obj\Debug\Calculadoa.Properties.Resources.resources
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.Cache
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora\Calculadora\bin\Debug\Calculadoa.exe
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora\Calculadora\bin\Debug\Calculadoa.pdb
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora\Calculadora\bin\Debug\MetroFramework.Design.dll
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora\Calculadora\bin\Debug\MetroFramework.dll
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora\Calculadora\bin\Debug\MetroFramework.Fonts.dll

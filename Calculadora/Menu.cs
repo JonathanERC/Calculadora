@@ -24,7 +24,7 @@ namespace Calculadoa
 
         private void btn2calc_Click(object sender, EventArgs e)
         {
-            Form _ver = new Form();
+            Calculadora _ver = new Calculadora();
             _ver.Show();
         }
 

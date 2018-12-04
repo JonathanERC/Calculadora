@@ -62,41 +62,45 @@ namespace Calculadoa
             pagohextra = 0;
             marcado = Convert.ToBoolean(chk3bonificacion.Checked);
             //Inicializar
-            bonificacion = 0.0;
+            bonificacion = 0;
             //Proceso
             sueldobruto = 0;
+            sueldoneto = 0;
             //Evaluar bonificación
             if (marcado == true)
             {
                 if (horasnormales >= 9)
                 {
                     horasextras = horasnormales - 8;
-                    pagohextra = (pagohnormal * 0.10)*horasextras;
+                    pagohextra = (pagohnormal * 0.35) + ((horasextras * pagohextra) * 0.10);
+                    //pagohextra = (pagohnormal * 0.10)*horasextras;
                     //bonificacion = sueldobruto * pagohextra;
                     sueldobruto = (horasnormales * pagohnormal) + (horasextras * pagohextra);
                 }
             }
-            sueldobruto = (horasnormales * pagohnormal) + pagohextra;
-            sueldoneto = sueldobruto + pagohextra;
-            bonificacion = sueldobruto - sueldoneto;
-            //sueldoneto = sueldobruto + bonificacion;
-            switch (sueldobruto)
-            {
-                case double n when (n < 216.7812552083334 && n > 325.1713541666666):
-                    sueldobruto = ((sueldobruto * 15) / 100);
-                    break;
 
-                case double n when (n < 325.171359375 && n > 451.6265625):
-                    sueldobruto = ((sueldobruto * 20) / 100);
-                    break;
-
-                case double n when (n > 451.6265677083334):
-                    sueldobruto = ((sueldobruto * 25) / 100);
-                    break;
-            }
+                if (sueldobruto > 216.7812552083334 && sueldobruto < 325.1713541666666)
+                {
+                    double a = ((sueldobruto * 15) / 100);
+                    sueldoneto = sueldobruto - a;
+                }
+                else if (sueldobruto > 325.171359375 && sueldobruto < 451.6265625)
+                {
+                    double b = ((sueldobruto * 20) / 100);
+                    sueldoneto = sueldobruto - b;
+                }
+                else if (sueldobruto >= 451.6265677083334)
+                {
+                    double c = ((sueldobruto * 25) / 100);
+                    sueldoneto = sueldobruto - c;
+                }
+                sueldobruto = (horasnormales * pagohnormal) + pagohextra;
+                //sueldoneto = sueldobruto + pagohextra;
+                //sueldoneto = sueldobruto + bonificacion;
+                bonificacion = ((horasextras * pagohextra) * 0.10);
             //Salida
             txt3sueldobruto.Text = "RD$ " + Convert.ToString(sueldobruto);
-            txt3bonificacion.Text = "RD$ " + Convert.ToString(bonificacion*-1);
+            txt3bonificacion.Text = "RD$ " + Convert.ToString(bonificacion);
             txt3sueldoneto.Text = "RD$ " + Convert.ToString(sueldoneto);
         }
     }

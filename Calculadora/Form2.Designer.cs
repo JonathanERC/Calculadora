@@ -226,7 +226,7 @@
             this.txt3sueldobruto.CustomButton.UseSelectable = true;
             this.txt3sueldobruto.CustomButton.Visible = false;
             this.txt3sueldobruto.Lines = new string[0];
-            this.txt3sueldobruto.Location = new System.Drawing.Point(206, 314);
+            this.txt3sueldobruto.Location = new System.Drawing.Point(206, 317);
             this.txt3sueldobruto.MaxLength = 32767;
             this.txt3sueldobruto.Name = "txt3sueldobruto";
             this.txt3sueldobruto.PasswordChar = '\0';
@@ -267,7 +267,7 @@
             this.metroLabel4.AutoSize = true;
             this.metroLabel4.Location = new System.Drawing.Point(206, 34);
             this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(85, 19);
+            this.metroLabel4.Size = new System.Drawing.Size(86, 19);
             this.metroLabel4.TabIndex = 3;
             this.metroLabel4.Text = "Pago normal";
             // 
