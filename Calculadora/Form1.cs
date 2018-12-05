@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using MetroFramework.Forms;
+using MetroFramework;
 
 namespace Calculadoa
 {
@@ -15,9 +17,12 @@ namespace Calculadoa
     {
         double num1, num2, result, a, b, c;
         string op;
+
         public Calculadora()
         {
             InitializeComponent();
+            txtvalor.Focus();
+            txt1valor.Focus();
         }
 
         //funciones generales I
@@ -210,6 +215,176 @@ namespace Calculadoa
             btnpunto.Enabled = !txtvalor.Text.Contains(".") && txtvalor.Text != "";
         }
 
+        public void calcular()
+        {
+            if (txtvalor.Text == "" || txtvalor.Text == "Por favor introducir los valores.")
+            {
+                txtvalor.Text = "Por favor introducir los valores.";
+            }
+            else
+            {
+                num2 = Convert.ToDouble(txtvalor.Text);
+                if (op == "+")
+                {
+                    result = (num1 + num2);
+                    txtvalor.Text = Convert.ToString(result);
+                    ////num1 = result;
+                }
+                if (op == "-")
+                {
+                    result = (num1 - num2);
+                    txtvalor.Text = Convert.ToString(result);
+                    ////num1 = result;
+                }
+                if (op == "*")
+                {
+                    result = (num1 * num2);
+                    txtvalor.Text = Convert.ToString(result);
+                    //num1 = result;
+                }
+                if (op == "/")
+                {
+                    if (num2 == 0)
+                    {
+                        txtvalor.Text = "No se puede dividir entre cero.";
+                    }
+                    else
+                    {
+                        result = (num1 / num2);
+                        txtvalor.Text = Convert.ToString(result);
+                        //num1 = result;
+                    }
+                }
+                if (op == "%")
+                {
+                    result = ((num1 * num2)/100);
+                    txtvalor.Text = Convert.ToString(result);
+                    //num1 = result;
+                }
+                if (op == "1/x")
+                {
+                    result = (num1*1/num2);
+                    txtvalor.Text = Convert.ToString(result);
+                    //num1 = result;
+                }
+                if (op == "raiz")
+                {
+                    if (num2 >= 0)
+                    {
+                        result = (Math.Sqrt(num1*num2));
+                        txtvalor.Text = Convert.ToString(result);
+                        //num1 = result;
+                    }
+                    else
+                    {
+                        txtvalor.Text = "La raíz de números negativos es imaginaria.";
+                    }
+                }
+                if (op == "xy")
+                {
+                    result = (Math.Pow(num1,num2));
+                    txtvalor.Text = Convert.ToString(result);
+                    //num1 = result;
+                }
+                if (op == "log")
+                {
+                    result = (Math.Log10(num2*num1));
+                    txtvalor.Text = Convert.ToString(result);
+                    //num1 = result;
+                }
+                if (op == "xy")
+                {
+                    result = (Math.Pow(num1*num2, -1));
+                    txtvalor.Text = Convert.ToString(result);
+                    //num1 = result;
+                }
+                //if (op == "pi")
+                //{
+                //    result = (Math.PI);
+                //    txtvalor.Text = Convert.ToString(result);
+                //    //num1 = result;
+                //}
+                //if (op == "e")
+                //{
+                //    result = (Math.E);
+                //    txtvalor.Text = Convert.ToString(result);
+                //    //num1 = result;
+                //}
+                if (op == "exp")
+                {
+                    result = (Math.Exp(num2*num1));
+                    txtvalor.Text = Convert.ToString(result);
+                    //num1 = result;
+                }
+                if (op == "yraizx")
+                {
+                    if (num1 <= 0)
+                    {
+                        txtvalor.Text = "La raíz de números negativos es imaginaria.";
+                    }
+                    else
+                    {
+                        double a = 1, c = a/num2;
+                        result = (Math.Pow(num1, c));
+                        txtvalor.Text = Convert.ToString(result);
+                        //num1 = result;
+                    }
+                }
+                if (op == "10x")
+                {
+                    result = (Math.Pow(10, num2*num1));
+                    txtvalor.Text = Convert.ToString(result);
+                    //num1 = result;
+                }
+                if (op == "fac")
+                {
+                    result = 1;
+                    for (b = 1; b <= num1*num2; b++)
+                    {
+                        result = result * b;
+                    }
+                    txtvalor.Text = Convert.ToString(result);
+                    //num1 = result;
+                }
+                if (op == "tan")
+                {
+                    result = (num1 * Math.Tan(num2));
+                    txtvalor.Text = Convert.ToString(result);
+                    //num1 = result;
+                }
+                if (op == "sen")
+                {
+                    result = (num1 * Math.Sin(num2));
+                    txtvalor.Text = Convert.ToString(result);
+                    //num1 = result;
+                }
+                if (op == "cos")
+                {
+                    result = (num1 * Math.Cos(num2));
+                    txtvalor.Text = Convert.ToString(result);
+                    //num1 = result;
+                }
+                if (op == "tanm1")
+                {
+                    result = (num1 * Math.Atan(num2));
+                    txtvalor.Text = Convert.ToString(result);
+                    //num1 = result;
+                }
+                if (op == "senm1")
+                {
+                    result = (num1 * Math.Asin(num2));
+                    txtvalor.Text = Convert.ToString(result);
+                    //num1 = result;
+                }
+                if (op == "cosm1")
+                {
+                    result = (num1 * Math.Acos(num2));
+                    txtvalor.Text = Convert.ToString(result);
+                    //num1 = result;
+                }
+            }
+        }
+
         public void imprimir()
         {
             //Codigo para hacer el cuadro de guardado
@@ -227,176 +402,6 @@ namespace Calculadoa
                         );
                 //Esto abre el archivo una vez guardado
                 System.Diagnostics.Process.Start(savefile.FileName);
-            }
-        }
-
-        public void calcular()
-        {
-            if (txtvalor.Text == "" || txtvalor.Text == "Por favor introducir los valores.")
-            {
-                txtvalor.Text = "Por favor introducir los valores.";
-            }
-            else
-            {
-                num2 = Convert.ToDouble(txtvalor.Text);
-                if (op == "+")
-                {
-                    result = (num1 + num2);
-                    txtvalor.Text = Convert.ToString(result);
-                    num1 = result;
-                }
-                if (op == "-")
-                {
-                    result = (num1 - num2);
-                    txtvalor.Text = Convert.ToString(result);
-                    num1 = result;
-                }
-                if (op == "*")
-                {
-                    result = (num1 * num2);
-                    txtvalor.Text = Convert.ToString(result);
-                    num1 = result;
-                }
-                if (op == "/")
-                {
-                    if (num2 == 0)
-                    {
-                        txtvalor.Text = "No se puede dividir entre cero.";
-                    }
-                    else
-                    {
-                        result = (num1 / num2);
-                        txtvalor.Text = Convert.ToString(result);
-                        num1 = result;
-                    }
-                }
-                if (op == "%")
-                {
-                    result = ((num1 * num2)/100);
-                    txtvalor.Text = Convert.ToString(result);
-                    num1 = result;
-                }
-                if (op == "1/x")
-                {
-                    result = (num1*1/num2);
-                    txtvalor.Text = Convert.ToString(result);
-                    num1 = result;
-                }
-                if (op == "raiz")
-                {
-                    if (num2 >= 0)
-                    {
-                        result = (Math.Sqrt(num1*num2));
-                        txtvalor.Text = Convert.ToString(result);
-                        num1 = result;
-                    }
-                    else
-                    {
-                        txtvalor.Text = "La raíz de números negativos es imaginaria.";
-                    }
-                }
-                if (op == "xy")
-                {
-                    result = (Math.Pow(num1,num2));
-                    txtvalor.Text = Convert.ToString(result);
-                    num1 = result;
-                }
-                if (op == "log")
-                {
-                    result = (Math.Log10(num2*num1));
-                    txtvalor.Text = Convert.ToString(result);
-                    num1 = result;
-                }
-                if (op == "xy")
-                {
-                    result = (Math.Pow(num1*num2, -1));
-                    txtvalor.Text = Convert.ToString(result);
-                    num1 = result;
-                }
-                //if (op == "pi")
-                //{
-                //    result = (Math.PI);
-                //    txtvalor.Text = Convert.ToString(result);
-                //    num1 = result;
-                //}
-                //if (op == "e")
-                //{
-                //    result = (Math.E);
-                //    txtvalor.Text = Convert.ToString(result);
-                //    num1 = result;
-                //}
-                if (op == "exp")
-                {
-                    result = (Math.Exp(num2*num1));
-                    txtvalor.Text = Convert.ToString(result);
-                    num1 = result;
-                }
-                if (op == "yraizx")
-                {
-                    if (num1 <= 0)
-                    {
-                        txtvalor.Text = "La raíz de números negativos es imaginaria.";
-                    }
-                    else
-                    {
-                        double a = 1, c = a/num2;
-                        result = (Math.Pow(num1, c));
-                        txtvalor.Text = Convert.ToString(result);
-                        num1 = result;
-                    }
-                }
-                if (op == "10x")
-                {
-                    result = (Math.Pow(10, num2*num1));
-                    txtvalor.Text = Convert.ToString(result);
-                    num1 = result;
-                }
-                if (op == "fac")
-                {
-                    result = 1;
-                    for (b = 1; b <= num1*num2; b++)
-                    {
-                        result = result * b;
-                    }
-                    txtvalor.Text = Convert.ToString(result);
-                    num1 = result;
-                }
-                if (op == "tan")
-                {
-                    result = (num1 * Math.Tan(num2));
-                    txtvalor.Text = Convert.ToString(result);
-                    num1 = result;
-                }
-                if (op == "sen")
-                {
-                    result = (num1 * Math.Sin(num2));
-                    txtvalor.Text = Convert.ToString(result);
-                    num1 = result;
-                }
-                if (op == "cos")
-                {
-                    result = (num1 * Math.Cos(num2));
-                    txtvalor.Text = Convert.ToString(result);
-                    num1 = result;
-                }
-                if (op == "tanm1")
-                {
-                    result = (num1 * Math.Atan(num2));
-                    txtvalor.Text = Convert.ToString(result);
-                    num1 = result;
-                }
-                if (op == "senm1")
-                {
-                    result = (num1 * Math.Asin(num2));
-                    txtvalor.Text = Convert.ToString(result);
-                    num1 = result;
-                }
-                if (op == "cosm1")
-                {
-                    result = (num1 * Math.Acos(num2));
-                    txtvalor.Text = Convert.ToString(result);
-                    num1 = result;
-                }
             }
         }
 
@@ -529,11 +534,13 @@ namespace Calculadoa
         private void metroPanel1_Paint(object sender, PaintEventArgs e)
         {
             txtvalor.Focus();
+            txt1valor.Focus();
         }
 
         private void metroPanel2_Paint(object sender, PaintEventArgs e)
         {
             txt1valor.Focus();
+            txtvalor.Focus();
         }
 
         private void txtvalor_TextChanged(object sender, EventArgs e)
@@ -843,6 +850,269 @@ namespace Calculadoa
             num1 = Convert.ToDouble(txtvalor.Text);
             txtvalor.Text = "";
             op = "tanm1";
+        }
+
+        private void btn1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.NumPad1 || e.KeyCode == Keys.D0)
+            {
+                numero1();
+            }
+        }
+
+        private void txtvalor_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.NumPad1 || e.KeyCode == Keys.D1)
+            {
+                numero1();
+            }
+            if (e.KeyCode == Keys.NumPad2 || e.KeyCode == Keys.D2)
+            {
+                numero2();
+            }
+            if (e.KeyCode == Keys.NumPad3 || e.KeyCode == Keys.D3)
+            {
+                numero3();
+            }
+            if (e.KeyCode == Keys.NumPad4 || e.KeyCode == Keys.D4)
+            {
+                numero4();
+            }
+            if (e.KeyCode == Keys.NumPad5 || e.KeyCode == Keys.D5)
+            {
+                numero5();
+            }
+            if (e.KeyCode == Keys.NumPad6 || e.KeyCode == Keys.D6)
+            {
+                numero6();
+            }
+            if (e.KeyCode == Keys.NumPad7 || e.KeyCode == Keys.D7)
+            {
+                numero7();
+            }
+            if (e.KeyCode == Keys.NumPad8 || e.KeyCode == Keys.D8)
+            {
+                numero8();
+            }
+            if (e.KeyCode == Keys.NumPad9 || e.KeyCode == Keys.D9)
+            {
+                numero9();
+            }
+            if (e.KeyCode == Keys.NumPad0 || e.KeyCode == Keys.D0)
+            {
+                numero0();
+            }
+            if (e.KeyCode == Keys.OemPeriod || e.KeyCode == Keys.Decimal)
+            {
+                punto();
+            }
+            if (e.KeyCode == Keys.Divide)
+            {
+                dividir();
+            }
+            if (e.KeyCode == Keys.Multiply)
+            {
+                multiplicar();
+            }
+            if (e.KeyCode == Keys.Oemplus || e.KeyCode == Keys.Add)
+            {
+                suma();
+            }
+            if (e.KeyCode == Keys.OemMinus)
+            {
+                resta();
+            }
+            if (e.KeyCode == Keys.Return)
+            {
+                calcular();
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                borrar();
+            }
+            if (e.KeyCode == Keys.Escape)
+            {
+                limpiar();
+            }
+        }
+
+        private void Tabcontrol_ChangeUICues(object sender, UICuesEventArgs e)
+        {
+
+        }
+
+        private void Tabcontrol_Click(object sender, EventArgs e)
+        {
+            txtvalor.Focus();
+            txt1valor.Focus();
+        }
+
+        private void btn2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.NumPad2 || e.KeyCode == Keys.D2)
+            {
+                numero2();
+            }
+        }
+
+        private void btn3_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.NumPad3 || e.KeyCode == Keys.D3)
+            {
+                numero3();
+            }
+        }
+
+        private void btn4_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.NumPad4 || e.KeyCode == Keys.D4)
+            {
+                numero4();
+            }
+        }
+
+        private void btn5_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.NumPad5 || e.KeyCode == Keys.D5)
+            {
+                numero5();
+            }
+        }
+
+        private void btn6_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.NumPad6 || e.KeyCode == Keys.D6)
+            {
+                numero6();
+            }
+        }
+
+        private void btn7_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.NumPad7 || e.KeyCode == Keys.D7)
+            {
+                numero7();
+            }
+        }
+
+        private void btn8_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.NumPad8 || e.KeyCode == Keys.D8)
+            {
+                numero8();
+            }
+        }
+
+        private void btn9_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.NumPad9 || e.KeyCode == Keys.D9)
+            {
+                numero9();
+            }
+        }
+
+        private void btn0_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.NumPad0 || e.KeyCode == Keys.D0)
+            {
+                numero0();
+            }
+        }
+
+        private void btnpunto_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.OemPeriod || e.KeyCode == Keys.Decimal)
+            {
+                punto();
+            }
+        }
+
+        private void txtvalor_Click(object sender, EventArgs e)
+        {
+            txtvalor.Focus();
+            txt1valor.Focus();
+        }
+
+        private void txt1valor_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.NumPad1 || e.KeyCode == Keys.D1)
+            {
+                numero1();
+            }
+            if (e.KeyCode == Keys.NumPad2 || e.KeyCode == Keys.D2)
+            {
+                numero2();
+            }
+            if (e.KeyCode == Keys.NumPad3 || e.KeyCode == Keys.D3)
+            {
+                numero3();
+            }
+            if (e.KeyCode == Keys.NumPad4 || e.KeyCode == Keys.D4)
+            {
+                numero4();
+            }
+            if (e.KeyCode == Keys.NumPad5 || e.KeyCode == Keys.D5)
+            {
+                numero5();
+            }
+            if (e.KeyCode == Keys.NumPad6 || e.KeyCode == Keys.D6)
+            {
+                numero6();
+            }
+            if (e.KeyCode == Keys.NumPad7 || e.KeyCode == Keys.D7)
+            {
+                numero7();
+            }
+            if (e.KeyCode == Keys.NumPad8 || e.KeyCode == Keys.D8)
+            {
+                numero8();
+            }
+            if (e.KeyCode == Keys.NumPad9 || e.KeyCode == Keys.D9)
+            {
+                numero9();
+            }
+            if (e.KeyCode == Keys.NumPad0 || e.KeyCode == Keys.D0)
+            {
+                numero0();
+            }
+            if (e.KeyCode == Keys.OemPeriod || e.KeyCode == Keys.Decimal)
+            {
+                punto();
+            }
+            if (e.KeyCode == Keys.Divide)
+            {
+                dividir();
+            }
+            if (e.KeyCode == Keys.Multiply)
+            {
+                multiplicar();
+            }
+            if (e.KeyCode == Keys.Oemplus || e.KeyCode == Keys.Add)
+            {
+                suma();
+            }
+            if (e.KeyCode == Keys.OemMinus)
+            {
+                resta();
+            }
+            if (e.KeyCode == Keys.Return)
+            {
+                calcular();
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                borrar();
+            }
+            if (e.KeyCode == Keys.Escape)
+            {
+                limpiar();
+            }
+        }
+
+        private void txt1valor_Click(object sender, EventArgs e)
+        {
+            txt1valor.Focus();
+            txtvalor.Focus();
         }
 
         private void btn1yraizx_Click(object sender, EventArgs e)

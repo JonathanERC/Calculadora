@@ -28,3 +28,35 @@ C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora\Calculad
 C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora\Calculadora\bin\Debug\MetroFramework.Design.dll
 C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora\Calculadora\bin\Debug\MetroFramework.dll
 C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora\Calculadora\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\jrondon\source\Unicda\Calculadora\Calculadora\obj\Debug\Calculadora.csprojAssemblyReference.cache
+C:\Users\jrondon\source\Unicda\Calculadora\Calculadora\obj\Debug\Calculadoa.exe
+C:\Users\jrondon\source\Unicda\Calculadora\Calculadora\obj\Debug\Calculadoa.pdb
+C:\Users\jrondon\source\Unicda\Calculadora\Calculadora\bin\Debug\Calculadoa.exe.config
+C:\Users\jrondon\source\Unicda\Calculadora\Calculadora\bin\Debug\Calculadoa.exe
+C:\Users\jrondon\source\Unicda\Calculadora\Calculadora\bin\Debug\Calculadoa.pdb
+C:\Users\jrondon\source\Unicda\Calculadora\Calculadora\bin\Debug\MetroFramework.Design.dll
+C:\Users\jrondon\source\Unicda\Calculadora\Calculadora\bin\Debug\MetroFramework.dll
+C:\Users\jrondon\source\Unicda\Calculadora\Calculadora\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\jrondon\source\Unicda\Calculadora\Calculadora\obj\Debug\Calculadoa.Calculadora.resources
+C:\Users\jrondon\source\Unicda\Calculadora\Calculadora\obj\Debug\Calculadoa.Form2.resources
+C:\Users\jrondon\source\Unicda\Calculadora\Calculadora\obj\Debug\Calculadoa.Menu.resources
+C:\Users\jrondon\source\Unicda\Calculadora\Calculadora\obj\Debug\Calculadoa.Properties.Resources.resources
+C:\Users\jrondon\source\Unicda\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.cache
+C:\Users\jrondon\source\Unicda\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\jrondon\source\Unicda\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.CopyComplete
+C:\Users\jrondon\source\Unicda\Calculadora-if\Calculadora\bin\Debug\Calculadoa.exe.config
+C:\Users\jrondon\source\Unicda\Calculadora-if\Calculadora\bin\Debug\Calculadoa.exe
+C:\Users\jrondon\source\Unicda\Calculadora-if\Calculadora\bin\Debug\Calculadoa.pdb
+C:\Users\jrondon\source\Unicda\Calculadora-if\Calculadora\bin\Debug\MetroFramework.Design.dll
+C:\Users\jrondon\source\Unicda\Calculadora-if\Calculadora\bin\Debug\MetroFramework.dll
+C:\Users\jrondon\source\Unicda\Calculadora-if\Calculadora\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\jrondon\source\Unicda\Calculadora-if\Calculadora\obj\Debug\Calculadora.csprojAssemblyReference.cache
+C:\Users\jrondon\source\Unicda\Calculadora-if\Calculadora\obj\Debug\Calculadoa.Calculadora.resources
+C:\Users\jrondon\source\Unicda\Calculadora-if\Calculadora\obj\Debug\Calculadoa.Form2.resources
+C:\Users\jrondon\source\Unicda\Calculadora-if\Calculadora\obj\Debug\Calculadoa.Menu.resources
+C:\Users\jrondon\source\Unicda\Calculadora-if\Calculadora\obj\Debug\Calculadoa.Properties.Resources.resources
+C:\Users\jrondon\source\Unicda\Calculadora-if\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.cache
+C:\Users\jrondon\source\Unicda\Calculadora-if\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\jrondon\source\Unicda\Calculadora-if\Calculadora\obj\Debug\Calculadora.csproj.CopyComplete
+C:\Users\jrondon\source\Unicda\Calculadora-if\Calculadora\obj\Debug\Calculadoa.exe
+C:\Users\jrondon\source\Unicda\Calculadora-if\Calculadora\obj\Debug\Calculadoa.pdb

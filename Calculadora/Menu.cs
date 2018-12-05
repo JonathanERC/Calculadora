@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using MetroFramework.Forms;
+using MetroFramework;
 
 namespace Calculadoa
 {
@@ -19,7 +22,7 @@ namespace Calculadoa
 
         private void Menu_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btn2calc_Click(object sender, EventArgs e)
@@ -32,6 +35,11 @@ namespace Calculadoa
         {
             Form2 _ver = new Form2();
             _ver.Show();
+        }
+
+        private void metroLabel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

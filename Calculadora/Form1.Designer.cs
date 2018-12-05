@@ -178,6 +178,7 @@
             this.btn2.Text = "2";
             this.btn2.UseSelectable = true;
             this.btn2.Click += new System.EventHandler(this.btn2_Click_1);
+            this.btn2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btn2_KeyDown);
             // 
             // btnlimpiar
             // 
@@ -225,7 +226,9 @@
             this.txtvalor.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtvalor.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.txtvalor.TextChanged += new System.EventHandler(this.txtvalor_TextChanged);
+            this.txtvalor.Click += new System.EventHandler(this.txtvalor_Click);
             this.txtvalor.Enter += new System.EventHandler(this.txtvalor_Enter);
+            this.txtvalor.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtvalor_KeyDown);
             this.txtvalor.Leave += new System.EventHandler(this.txtvalor_Leave);
             // 
             // btndiv
@@ -249,6 +252,7 @@
             this.btn1.Text = "1";
             this.btn1.UseSelectable = true;
             this.btn1.Click += new System.EventHandler(this.btn1_Click_2);
+            this.btn1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btn1_KeyDown);
             // 
             // btnmult
             // 
@@ -271,6 +275,7 @@
             this.btn4.Text = "4";
             this.btn4.UseSelectable = true;
             this.btn4.Click += new System.EventHandler(this.btn4_Click_1);
+            this.btn4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btn4_KeyDown);
             // 
             // btnrest
             // 
@@ -293,6 +298,7 @@
             this.btn5.Text = "5";
             this.btn5.UseSelectable = true;
             this.btn5.Click += new System.EventHandler(this.btn5_Click_1);
+            this.btn5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btn5_KeyDown);
             // 
             // btnsum
             // 
@@ -315,6 +321,7 @@
             this.btn7.Text = "7";
             this.btn7.UseSelectable = true;
             this.btn7.Click += new System.EventHandler(this.btn7_Click_1);
+            this.btn7.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btn7_KeyDown);
             // 
             // btnpunto
             // 
@@ -326,6 +333,7 @@
             this.btnpunto.Text = ".";
             this.btnpunto.UseSelectable = true;
             this.btnpunto.Click += new System.EventHandler(this.btnpunto_Click_1);
+            this.btnpunto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnpunto_KeyDown);
             // 
             // btn8
             // 
@@ -337,6 +345,7 @@
             this.btn8.Text = "8";
             this.btn8.UseSelectable = true;
             this.btn8.Click += new System.EventHandler(this.btn8_Click_1);
+            this.btn8.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btn8_KeyDown);
             // 
             // btn9
             // 
@@ -348,6 +357,7 @@
             this.btn9.Text = "9";
             this.btn9.UseSelectable = true;
             this.btn9.Click += new System.EventHandler(this.btn9_Click_1);
+            this.btn9.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btn9_KeyDown);
             // 
             // btn0
             // 
@@ -359,6 +369,7 @@
             this.btn0.Text = "0";
             this.btn0.UseSelectable = true;
             this.btn0.Click += new System.EventHandler(this.btn0_Click_1);
+            this.btn0.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btn0_KeyDown);
             // 
             // btn6
             // 
@@ -370,6 +381,7 @@
             this.btn6.Text = "6";
             this.btn6.UseSelectable = true;
             this.btn6.Click += new System.EventHandler(this.btn6_Click_1);
+            this.btn6.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btn6_KeyDown);
             // 
             // btn3
             // 
@@ -381,6 +393,7 @@
             this.btn3.Text = "3";
             this.btn3.UseSelectable = true;
             this.btn3.Click += new System.EventHandler(this.btn3_Click_1);
+            this.btn3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btn3_KeyDown);
             // 
             // Tabcontrol
             // 
@@ -392,6 +405,8 @@
             this.Tabcontrol.Size = new System.Drawing.Size(467, 306);
             this.Tabcontrol.TabIndex = 2;
             this.Tabcontrol.UseSelectable = true;
+            this.Tabcontrol.Click += new System.EventHandler(this.Tabcontrol_Click);
+            this.Tabcontrol.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.Tabcontrol_ChangeUICues);
             // 
             // metroTabPage1
             // 
@@ -940,7 +955,9 @@
             this.txt1valor.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt1valor.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.txt1valor.TextChanged += new System.EventHandler(this.txt1valor_TextChanged);
+            this.txt1valor.Click += new System.EventHandler(this.txt1valor_Click);
             this.txt1valor.Enter += new System.EventHandler(this.txt1valor_Enter);
+            this.txt1valor.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt1valor_KeyDown);
             this.txt1valor.Leave += new System.EventHandler(this.txt1valor_Leave);
             // 
             // Calculadora

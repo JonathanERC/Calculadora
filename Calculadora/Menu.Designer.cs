@@ -37,9 +37,9 @@
             // btn2calc
             // 
             this.btn2calc.ActiveControl = null;
-            this.btn2calc.Location = new System.Drawing.Point(38, 63);
+            this.btn2calc.Location = new System.Drawing.Point(15, 89);
             this.btn2calc.Name = "btn2calc";
-            this.btn2calc.Size = new System.Drawing.Size(100, 61);
+            this.btn2calc.Size = new System.Drawing.Size(138, 61);
             this.btn2calc.TabIndex = 0;
             this.btn2calc.Text = "Calculadora \r\nMatemática";
             this.btn2calc.UseSelectable = true;
@@ -48,9 +48,9 @@
             // btn2sueldo
             // 
             this.btn2sueldo.ActiveControl = null;
-            this.btn2sueldo.Location = new System.Drawing.Point(38, 130);
+            this.btn2sueldo.Location = new System.Drawing.Point(169, 87);
             this.btn2sueldo.Name = "btn2sueldo";
-            this.btn2sueldo.Size = new System.Drawing.Size(100, 63);
+            this.btn2sueldo.Size = new System.Drawing.Size(138, 63);
             this.btn2sueldo.TabIndex = 0;
             this.btn2sueldo.Text = "Calculadora\r\nde Sueldo";
             this.btn2sueldo.UseSelectable = true;
@@ -59,17 +59,18 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(3, 215);
+            this.metroLabel1.Location = new System.Drawing.Point(207, 216);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(111, 19);
             this.metroLabel1.TabIndex = 2;
             this.metroLabel1.Text = "Jonathan Rondón";
+            this.metroLabel1.Click += new System.EventHandler(this.metroLabel1_Click);
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(177, 238);
+            this.ClientSize = new System.Drawing.Size(322, 238);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.btn2sueldo);
             this.Controls.Add(this.btn2calc);

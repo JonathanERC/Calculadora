@@ -46,6 +46,8 @@
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.txt3deducciones = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -226,7 +228,7 @@
             this.txt3sueldobruto.CustomButton.UseSelectable = true;
             this.txt3sueldobruto.CustomButton.Visible = false;
             this.txt3sueldobruto.Lines = new string[0];
-            this.txt3sueldobruto.Location = new System.Drawing.Point(206, 317);
+            this.txt3sueldobruto.Location = new System.Drawing.Point(206, 354);
             this.txt3sueldobruto.MaxLength = 32767;
             this.txt3sueldobruto.Name = "txt3sueldobruto";
             this.txt3sueldobruto.PasswordChar = '\0';
@@ -267,7 +269,7 @@
             this.metroLabel4.AutoSize = true;
             this.metroLabel4.Location = new System.Drawing.Point(206, 34);
             this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(86, 19);
+            this.metroLabel4.Size = new System.Drawing.Size(85, 19);
             this.metroLabel4.TabIndex = 3;
             this.metroLabel4.Text = "Pago normal";
             // 
@@ -283,7 +285,7 @@
             // metroLabel6
             // 
             this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(26, 321);
+            this.metroLabel6.Location = new System.Drawing.Point(26, 358);
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Size = new System.Drawing.Size(79, 19);
             this.metroLabel6.TabIndex = 3;
@@ -326,7 +328,9 @@
             this.metroPanel1.Controls.Add(this.metroLabel4);
             this.metroPanel1.Controls.Add(this.txt3horasnormales);
             this.metroPanel1.Controls.Add(this.metroLabel6);
+            this.metroPanel1.Controls.Add(this.txt3deducciones);
             this.metroPanel1.Controls.Add(this.txt3bonificacion);
+            this.metroPanel1.Controls.Add(this.metroLabel3);
             this.metroPanel1.Controls.Add(this.metroLabel5);
             this.metroPanel1.Controls.Add(this.txt3sueldobruto);
             this.metroPanel1.Controls.Add(this.metroLabel2);
@@ -339,17 +343,59 @@
             this.metroPanel1.HorizontalScrollbarSize = 10;
             this.metroPanel1.Location = new System.Drawing.Point(33, 63);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(315, 344);
+            this.metroPanel1.Size = new System.Drawing.Size(315, 400);
             this.metroPanel1.TabIndex = 4;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
             // 
+            // txt3deducciones
+            // 
+            // 
+            // 
+            // 
+            this.txt3deducciones.CustomButton.Image = null;
+            this.txt3deducciones.CustomButton.Location = new System.Drawing.Point(80, 1);
+            this.txt3deducciones.CustomButton.Name = "";
+            this.txt3deducciones.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txt3deducciones.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txt3deducciones.CustomButton.TabIndex = 1;
+            this.txt3deducciones.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txt3deducciones.CustomButton.UseSelectable = true;
+            this.txt3deducciones.CustomButton.Visible = false;
+            this.txt3deducciones.Lines = new string[0];
+            this.txt3deducciones.Location = new System.Drawing.Point(206, 316);
+            this.txt3deducciones.MaxLength = 32767;
+            this.txt3deducciones.Name = "txt3deducciones";
+            this.txt3deducciones.PasswordChar = '\0';
+            this.txt3deducciones.PromptText = "RD$ 0";
+            this.txt3deducciones.ReadOnly = true;
+            this.txt3deducciones.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txt3deducciones.SelectedText = "";
+            this.txt3deducciones.SelectionLength = 0;
+            this.txt3deducciones.SelectionStart = 0;
+            this.txt3deducciones.ShortcutsEnabled = true;
+            this.txt3deducciones.Size = new System.Drawing.Size(102, 23);
+            this.txt3deducciones.TabIndex = 1;
+            this.txt3deducciones.UseSelectable = true;
+            this.txt3deducciones.WaterMark = "RD$ 0";
+            this.txt3deducciones.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txt3deducciones.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.Location = new System.Drawing.Point(26, 320);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(82, 19);
+            this.metroLabel3.TabIndex = 3;
+            this.metroLabel3.Text = "Deducciones";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 423);
+            this.ClientSize = new System.Drawing.Size(384, 498);
             this.Controls.Add(this.metroPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -383,5 +429,7 @@
         private MetroFramework.Controls.MetroLabel metroLabel8;
         private MetroFramework.Controls.MetroLabel metroLabel9;
         private MetroFramework.Controls.MetroPanel metroPanel1;
+        private MetroFramework.Controls.MetroTextBox txt3deducciones;
+        private MetroFramework.Controls.MetroLabel metroLabel3;
     }
 }
