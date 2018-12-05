@@ -54,22 +54,27 @@ namespace Calculadoa
         private void btn3calcular_Click(object sender, EventArgs e)
         {
             //Declarar variables
-            int horasextras, horasnormales;
-            double pagohnormal, pagohextra, sueldobruto, sueldoneto, impuesto, bonificacion;
+            int horasextras = 0;
+            int horasnormales = 0;
+            double pagohnormal = 0; 
+            double pagohextra, sueldobruto, sueldoneto, impuesto, bonificacion;
             Boolean marcado;
-            //Entrada de datos
-            //if (txt3horasnormales.Text == "" || txt3pagonormal.Text == "")
-            //{
-            //    MetroFramework.MetroMessageBox.Show(this, "Favor completar todos los campos antes de continuar.", "Calculadora de Sueldo");
-            //}
-            horasnormales = Convert.ToInt32(txt3horasnormales.Text);
-            pagohnormal = Convert.ToDouble(txt3pagonormal.Text);
+            //Condicionar Errores
+            try
+            {
+                horasnormales = Convert.ToInt32(txt3horasnormales.Text);
+                pagohnormal = Convert.ToDouble(txt3pagonormal.Text);
+            }
+            catch (Exception ex)
+            {
+                MetroFramework.MetroMessageBox.Show(this, "Verifique si los valores introducidos en los campo son válidos o si dejo algún campo en blanco.", "Calculadora de Sueldo");
+            }
+
             marcado = Convert.ToBoolean(chk3bonificacion.Checked);
             //Inicializar
             bonificacion = 0;
             sueldoneto = 0;
             pagohextra = 0;
-            horasextras = 0;
             impuesto = 0;
             //Evaluar bonificación
             if (marcado == true)
@@ -77,8 +82,8 @@ namespace Calculadoa
                 if (horasnormales >= 9)
                 {
                     horasextras = horasnormales - 8;
-                    pagohextra = (pagohnormal * 0.35) + bonificacion;
-                    bonificacion = ((horasextras * pagohextra) * 0.10);
+                    pagohextra = (pagohnormal * 0.35D);
+                    bonificacion = ((horasextras * pagohextra) * 0.10D);
                 }
                 else
                 {
@@ -88,22 +93,26 @@ namespace Calculadoa
                 }
             }
             //Proceso
-            sueldobruto = (horasnormales * pagohnormal) + (horasextras * pagohextra) + pagohextra + bonificacion;
+            sueldobruto = (horasnormales * pagohnormal) + (horasextras * pagohextra) + bonificacion;
 
-            if (sueldobruto >= 216.7812552083334 && sueldobruto <= 325.1713541666666)
+            if (sueldobruto >= 216.7812552083334D && sueldobruto <= 325.1713541666666D)
             {
                 impuesto = ((sueldobruto * 15) / 100);
                 sueldoneto = sueldobruto - impuesto;
             }
-            else if (sueldobruto >= 325.171359375 && sueldobruto <= 451.6265625)
+            else if (sueldobruto >= 325.171359375D && sueldobruto <= 451.6265625D)
             {
                 impuesto = ((sueldobruto * 20) / 100);
                 sueldoneto = sueldobruto - impuesto;
             }
-            else if (sueldobruto >= 451.6265677083334)
+            else if (sueldobruto >= 451.6265677083334D)
             {
                 impuesto = ((sueldobruto * 25) / 100);
                 sueldoneto = sueldobruto - impuesto;
+            }
+            else
+            {
+                sueldoneto = sueldobruto;
             }
             //Salida
             txt3sueldobruto.Text = "RD$ " + Convert.ToString(sueldobruto);
