@@ -48,6 +48,10 @@
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.txt3deducciones = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.txt3pagoextra = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
+            this.txt3horasextras = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
             this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -140,7 +144,7 @@
             // chk3bonificacion
             // 
             this.chk3bonificacion.AutoSize = true;
-            this.chk3bonificacion.Location = new System.Drawing.Point(206, 181);
+            this.chk3bonificacion.Location = new System.Drawing.Point(206, 197);
             this.chk3bonificacion.Name = "chk3bonificacion";
             this.chk3bonificacion.Size = new System.Drawing.Size(80, 17);
             this.chk3bonificacion.TabIndex = 2;
@@ -162,7 +166,7 @@
             this.txt3bonificacion.CustomButton.UseSelectable = true;
             this.txt3bonificacion.CustomButton.Visible = false;
             this.txt3bonificacion.Lines = new string[0];
-            this.txt3bonificacion.Location = new System.Drawing.Point(206, 281);
+            this.txt3bonificacion.Location = new System.Drawing.Point(204, 364);
             this.txt3bonificacion.MaxLength = 32767;
             this.txt3bonificacion.Name = "txt3bonificacion";
             this.txt3bonificacion.PasswordChar = '\0';
@@ -195,7 +199,7 @@
             this.txt3sueldoneto.CustomButton.UseSelectable = true;
             this.txt3sueldoneto.CustomButton.Visible = false;
             this.txt3sueldoneto.Lines = new string[0];
-            this.txt3sueldoneto.Location = new System.Drawing.Point(206, 246);
+            this.txt3sueldoneto.Location = new System.Drawing.Point(204, 277);
             this.txt3sueldoneto.MaxLength = 32767;
             this.txt3sueldoneto.Name = "txt3sueldoneto";
             this.txt3sueldoneto.PasswordChar = '\0';
@@ -228,7 +232,7 @@
             this.txt3sueldobruto.CustomButton.UseSelectable = true;
             this.txt3sueldobruto.CustomButton.Visible = false;
             this.txt3sueldobruto.Lines = new string[0];
-            this.txt3sueldobruto.Location = new System.Drawing.Point(206, 354);
+            this.txt3sueldobruto.Location = new System.Drawing.Point(204, 422);
             this.txt3sueldobruto.MaxLength = 32767;
             this.txt3sueldobruto.Name = "txt3sueldobruto";
             this.txt3sueldobruto.PasswordChar = '\0';
@@ -258,7 +262,7 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(3, 217);
+            this.metroLabel2.Location = new System.Drawing.Point(3, 243);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(49, 19);
             this.metroLabel2.TabIndex = 3;
@@ -276,7 +280,7 @@
             // metroLabel5
             // 
             this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(26, 285);
+            this.metroLabel5.Location = new System.Drawing.Point(27, 368);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(79, 19);
             this.metroLabel5.TabIndex = 3;
@@ -285,7 +289,7 @@
             // metroLabel6
             // 
             this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(26, 358);
+            this.metroLabel6.Location = new System.Drawing.Point(26, 426);
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Size = new System.Drawing.Size(79, 19);
             this.metroLabel6.TabIndex = 3;
@@ -294,7 +298,7 @@
             // metroLabel7
             // 
             this.metroLabel7.AutoSize = true;
-            this.metroLabel7.Location = new System.Drawing.Point(27, 179);
+            this.metroLabel7.Location = new System.Drawing.Point(27, 195);
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Size = new System.Drawing.Size(123, 19);
             this.metroLabel7.TabIndex = 3;
@@ -312,7 +316,7 @@
             // metroLabel9
             // 
             this.metroLabel9.AutoSize = true;
-            this.metroLabel9.Location = new System.Drawing.Point(26, 250);
+            this.metroLabel9.Location = new System.Drawing.Point(27, 281);
             this.metroLabel9.Name = "metroLabel9";
             this.metroLabel9.Size = new System.Drawing.Size(85, 19);
             this.metroLabel9.TabIndex = 3;
@@ -325,7 +329,9 @@
             this.metroPanel1.Controls.Add(this.metroLabel8);
             this.metroPanel1.Controls.Add(this.btn3nuevo);
             this.metroPanel1.Controls.Add(this.btn3calcular);
+            this.metroPanel1.Controls.Add(this.metroLabel11);
             this.metroPanel1.Controls.Add(this.metroLabel4);
+            this.metroPanel1.Controls.Add(this.txt3horasextras);
             this.metroPanel1.Controls.Add(this.txt3horasnormales);
             this.metroPanel1.Controls.Add(this.metroLabel6);
             this.metroPanel1.Controls.Add(this.txt3deducciones);
@@ -334,7 +340,9 @@
             this.metroPanel1.Controls.Add(this.metroLabel5);
             this.metroPanel1.Controls.Add(this.txt3sueldobruto);
             this.metroPanel1.Controls.Add(this.metroLabel2);
+            this.metroPanel1.Controls.Add(this.metroLabel10);
             this.metroPanel1.Controls.Add(this.txt3sueldoneto);
+            this.metroPanel1.Controls.Add(this.txt3pagoextra);
             this.metroPanel1.Controls.Add(this.metroLabel1);
             this.metroPanel1.Controls.Add(this.txt3pagonormal);
             this.metroPanel1.Controls.Add(this.chk3bonificacion);
@@ -343,7 +351,7 @@
             this.metroPanel1.HorizontalScrollbarSize = 10;
             this.metroPanel1.Location = new System.Drawing.Point(33, 63);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(315, 400);
+            this.metroPanel1.Size = new System.Drawing.Size(315, 470);
             this.metroPanel1.TabIndex = 4;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
@@ -364,7 +372,7 @@
             this.txt3deducciones.CustomButton.UseSelectable = true;
             this.txt3deducciones.CustomButton.Visible = false;
             this.txt3deducciones.Lines = new string[0];
-            this.txt3deducciones.Location = new System.Drawing.Point(206, 316);
+            this.txt3deducciones.Location = new System.Drawing.Point(204, 393);
             this.txt3deducciones.MaxLength = 32767;
             this.txt3deducciones.Name = "txt3deducciones";
             this.txt3deducciones.PasswordChar = '\0';
@@ -385,17 +393,101 @@
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(26, 320);
+            this.metroLabel3.Location = new System.Drawing.Point(27, 397);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(82, 19);
             this.metroLabel3.TabIndex = 3;
             this.metroLabel3.Text = "Deducciones";
             // 
+            // txt3pagoextra
+            // 
+            // 
+            // 
+            // 
+            this.txt3pagoextra.CustomButton.Image = null;
+            this.txt3pagoextra.CustomButton.Location = new System.Drawing.Point(80, 1);
+            this.txt3pagoextra.CustomButton.Name = "";
+            this.txt3pagoextra.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txt3pagoextra.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txt3pagoextra.CustomButton.TabIndex = 1;
+            this.txt3pagoextra.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txt3pagoextra.CustomButton.UseSelectable = true;
+            this.txt3pagoextra.CustomButton.Visible = false;
+            this.txt3pagoextra.Lines = new string[0];
+            this.txt3pagoextra.Location = new System.Drawing.Point(204, 335);
+            this.txt3pagoextra.MaxLength = 32767;
+            this.txt3pagoextra.Name = "txt3pagoextra";
+            this.txt3pagoextra.PasswordChar = '\0';
+            this.txt3pagoextra.PromptText = "RD$ 0";
+            this.txt3pagoextra.ReadOnly = true;
+            this.txt3pagoextra.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txt3pagoextra.SelectedText = "";
+            this.txt3pagoextra.SelectionLength = 0;
+            this.txt3pagoextra.SelectionStart = 0;
+            this.txt3pagoextra.ShortcutsEnabled = true;
+            this.txt3pagoextra.Size = new System.Drawing.Size(102, 23);
+            this.txt3pagoextra.TabIndex = 1;
+            this.txt3pagoextra.UseSelectable = true;
+            this.txt3pagoextra.WaterMark = "RD$ 0";
+            this.txt3pagoextra.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txt3pagoextra.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel10
+            // 
+            this.metroLabel10.AutoSize = true;
+            this.metroLabel10.Location = new System.Drawing.Point(28, 310);
+            this.metroLabel10.Name = "metroLabel10";
+            this.metroLabel10.Size = new System.Drawing.Size(81, 19);
+            this.metroLabel10.TabIndex = 3;
+            this.metroLabel10.Text = "Horas extras";
+            // 
+            // txt3horasextras
+            // 
+            // 
+            // 
+            // 
+            this.txt3horasextras.CustomButton.Image = null;
+            this.txt3horasextras.CustomButton.Location = new System.Drawing.Point(80, 1);
+            this.txt3horasextras.CustomButton.Name = "";
+            this.txt3horasextras.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txt3horasextras.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txt3horasextras.CustomButton.TabIndex = 1;
+            this.txt3horasextras.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txt3horasextras.CustomButton.UseSelectable = true;
+            this.txt3horasextras.CustomButton.Visible = false;
+            this.txt3horasextras.Lines = new string[0];
+            this.txt3horasextras.Location = new System.Drawing.Point(204, 306);
+            this.txt3horasextras.MaxLength = 32767;
+            this.txt3horasextras.Name = "txt3horasextras";
+            this.txt3horasextras.PasswordChar = '\0';
+            this.txt3horasextras.PromptText = "Hrs 0";
+            this.txt3horasextras.ReadOnly = true;
+            this.txt3horasextras.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txt3horasextras.SelectedText = "";
+            this.txt3horasextras.SelectionLength = 0;
+            this.txt3horasextras.SelectionStart = 0;
+            this.txt3horasextras.ShortcutsEnabled = true;
+            this.txt3horasextras.Size = new System.Drawing.Size(102, 23);
+            this.txt3horasextras.TabIndex = 1;
+            this.txt3horasextras.UseSelectable = true;
+            this.txt3horasextras.WaterMark = "Hrs 0";
+            this.txt3horasextras.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txt3horasextras.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel11
+            // 
+            this.metroLabel11.AutoSize = true;
+            this.metroLabel11.Location = new System.Drawing.Point(27, 339);
+            this.metroLabel11.Name = "metroLabel11";
+            this.metroLabel11.Size = new System.Drawing.Size(72, 19);
+            this.metroLabel11.TabIndex = 3;
+            this.metroLabel11.Text = "Pago extra";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 498);
+            this.ClientSize = new System.Drawing.Size(384, 568);
             this.Controls.Add(this.metroPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -431,5 +523,9 @@
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private MetroFramework.Controls.MetroTextBox txt3deducciones;
         private MetroFramework.Controls.MetroLabel metroLabel3;
+        private MetroFramework.Controls.MetroLabel metroLabel11;
+        private MetroFramework.Controls.MetroTextBox txt3horasextras;
+        private MetroFramework.Controls.MetroLabel metroLabel10;
+        private MetroFramework.Controls.MetroTextBox txt3pagoextra;
     }
 }

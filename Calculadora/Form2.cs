@@ -43,6 +43,8 @@ namespace Calculadoa
         private void btn3nuevo_Click(object sender, EventArgs e)
         {
             txt3bonificacion.Clear();
+            txt3horasextras.Clear();
+            txt3pagoextra.Clear();
             txt3deducciones.Clear();
             txt3horasnormales.Clear();
             txt3pagonormal.Clear();
@@ -56,7 +58,7 @@ namespace Calculadoa
             //Declarar variables
             int horasextras = 0;
             int horasnormales = 0;
-            double pagohnormal = 0; 
+            double pagohnormal = 0;
             double pagohextra, sueldobruto, sueldoneto, impuesto, bonificacion;
             Boolean marcado;
             //Condicionar Errores
@@ -77,21 +79,29 @@ namespace Calculadoa
             pagohextra = 0;
             impuesto = 0;
             //Evaluar bonificación
+
             if (marcado == true)
             {
                 if (horasnormales >= 9)
                 {
-                    horasextras = horasnormales - 8;
                     pagohextra = (pagohnormal * 0.35D);
                     bonificacion = ((horasextras * pagohextra) * 0.10D);
                 }
                 else
                 {
-                    horasextras = 0;
                     pagohextra = 0;
                     bonificacion = 0;
                 }
+
             }
+
+            horasextras = horasnormales - 8;
+
+            if (horasextras < 0)
+            {
+                horasextras = 0;
+            }
+
             //Proceso
             sueldobruto = (horasnormales * pagohnormal) + (horasextras * pagohextra) + bonificacion;
 
@@ -119,6 +129,8 @@ namespace Calculadoa
             txt3bonificacion.Text = "RD$ " + Convert.ToString(bonificacion);
             txt3deducciones.Text = "RD$ " + Convert.ToString(impuesto);
             txt3sueldoneto.Text = "RD$ " + Convert.ToString(sueldoneto);
+            txt3pagoextra.Text = "RD$ " + Convert.ToString(pagohextra); ;
+            txt3horasextras.Text = Convert.ToString(horasextras) + " Hrs";
         }
     }
 }
