@@ -53,13 +53,14 @@ namespace Calculadoa
             chk3bonificacion.Checked = false;
         }
 
-        private void btn3calcular_Click(object sender, EventArgs e)
+        public void calcular()
         {
             //Declarar variables
             int horasextras = 0;
             int horasnormales = 0;
             double pagohnormal = 0;
-            double pagohextra, sueldobruto, sueldoneto, impuesto, bonificacion;
+            double bonificacion = 0;
+            double pagohextra, sueldobruto, sueldoneto, impuesto;
             Boolean marcado;
             //Condicionar Errores
             try
@@ -74,7 +75,6 @@ namespace Calculadoa
 
             marcado = Convert.ToBoolean(chk3bonificacion.Checked);
             //Inicializar
-            bonificacion = 0;
             sueldoneto = 0;
             pagohextra = 0;
             impuesto = 0;
@@ -84,15 +84,15 @@ namespace Calculadoa
             {
                 if (horasnormales >= 9)
                 {
-                    pagohextra = (pagohnormal * 0.35D);
-                    bonificacion = ((horasextras * pagohextra) * 0.10D);
+                    horasextras = horasnormales - 8;
+                    pagohextra = ((horasextras * pagohnormal) * 1.35D);
+                    bonificacion = ((pagohextra) * 0.10D);
                 }
                 else
                 {
                     pagohextra = 0;
                     bonificacion = 0;
                 }
-
             }
 
             horasextras = horasnormales - 8;
@@ -131,6 +131,10 @@ namespace Calculadoa
             txt3sueldoneto.Text = "RD$ " + Convert.ToString(sueldoneto);
             txt3pagoextra.Text = "RD$ " + Convert.ToString(pagohextra); ;
             txt3horasextras.Text = Convert.ToString(horasextras) + " Hrs";
+        }
+        private void btn3calcular_Click(object sender, EventArgs e)
+        {
+            calcular();
         }
     }
 }

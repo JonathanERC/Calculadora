@@ -60,3 +60,17 @@ C:\Users\jrondon\source\Unicda\Calculadora-if\Calculadora\obj\Debug\Calculadora.
 C:\Users\jrondon\source\Unicda\Calculadora-if\Calculadora\obj\Debug\Calculadora.csproj.CopyComplete
 C:\Users\jrondon\source\Unicda\Calculadora-if\Calculadora\obj\Debug\Calculadoa.exe
 C:\Users\jrondon\source\Unicda\Calculadora-if\Calculadora\obj\Debug\Calculadoa.pdb
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora-master\Calculadora\bin\Debug\Calculadoa.exe.config
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora-master\Calculadora\obj\Debug\Calculadoa.exe
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora-master\Calculadora\obj\Debug\Calculadoa.pdb
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora-master\Calculadora\bin\Debug\Calculadoa.exe
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora-master\Calculadora\bin\Debug\Calculadoa.pdb
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora-master\Calculadora\bin\Debug\MetroFramework.Design.dll
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora-master\Calculadora\bin\Debug\MetroFramework.dll
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora-master\Calculadora\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora-master\Calculadora\obj\Debug\Calculadora.csprojResolveAssemblyReference.cache
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora-master\Calculadora\obj\Debug\Calculadoa.Calculadora.resources
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora-master\Calculadora\obj\Debug\Calculadoa.Form2.resources
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora-master\Calculadora\obj\Debug\Calculadoa.Menu.resources
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora-master\Calculadora\obj\Debug\Calculadoa.Properties.Resources.resources
+C:\Users\Programacion\Documents\Visual Studio 2013\Projects\Calculadora-master\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.Cache
